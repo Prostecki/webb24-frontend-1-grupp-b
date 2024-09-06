@@ -70,3 +70,9 @@
 }
 
 /* HEY  */
+
+button:hover {
+  transition: 0.5;
+  background-color: white;
+  
+}
