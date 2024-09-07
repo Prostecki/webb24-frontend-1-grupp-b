@@ -15,26 +15,32 @@
         <p> Please provide us with your details and a brief description of your project or inquiry. We’ll review your message and reach out to you promptly.</p>
 
         <form action="/submit-form" method="post"></form>
-        <fieldset> 
+        <fieldset class="form-container">
             <legend> Let's Chat </legend>
             <br>
             <label for="name">Name:</label>
             <input type="text" id="name" required>
             <br>
             <br>
+            <div class="email">
             <label for="email">Email:</label>
             <input type="email" id="email" required>
+            </div>
             <br>
             <br>
+            <div class="number">
             <label for="phone">Phone Number:</label>
             <input type="number" id="phone">
+            </div>
             <br>
             <br>
-            <label for="message">Message:</label>
-            <textarea id="message" rows="4" required></textarea>
+            <div class="message">
+                <label for="message">Message:</label>
+                <textarea id="message" rows="5" required></textarea> 
+            </div>
             <br>
             <br> 
-
+            <button type="submit">Send</button>
         </fieldset>
 
 
