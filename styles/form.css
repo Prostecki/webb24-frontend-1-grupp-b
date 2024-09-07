@@ -47,7 +47,7 @@ input[type=number]::-webkit-outer-spin-button {
     appearance: none;
     margin: 0; 
 
-    /* Detta är för att ta bort dragdown dekorationen i nummerfältet */ 
+    /* Detta är för att ta bort dragdown dekorationen i nummerfältet. Hittade via W3. */ 
 }
 
 #message {
