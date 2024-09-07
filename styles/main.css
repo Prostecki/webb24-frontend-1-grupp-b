@@ -149,8 +149,20 @@ main {
 
 .grid-container {
   display: grid;
+  grid-template-rows: 400px 300px;
+  grid-template-columns: 300px 300px 300px;
+  gap: 50px 20px;
+}
+
+.background-container {
+  overflow: hidden;
+  width: 300px;
+  height: 400px;
+  background-color: yellow;
 }
 
 .grid-img {
+  transform: scale(1.5);
+  background-size: cover;
   width: 300px;
 }
