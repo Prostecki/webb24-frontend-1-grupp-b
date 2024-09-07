@@ -63,11 +63,10 @@ main {
 
 .content-section {
   width: 1000px;
-  padding: 25px;
+  margin: 75px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px;
 }
 
 .content-text-container {
@@ -147,9 +146,24 @@ main {
   font-size: 30px;
 }
 
+hr {
+  border: 0;
+  height: 1px;
+  width: 1000px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(255, 255, 255),
+    rgba(0, 0, 0, 0)
+  );
+  margin: 0 0 75px;
+}
+
 .grid-element {
   position: relative;
   cursor: pointer;
+  height: 400px;
+  transition: 0.5s;
 }
 
 .grid-element:hover .grid-img {
@@ -157,19 +171,41 @@ main {
   transition: 0.5s;
 }
 
+.grid-element > .grid-text > h1::after {
+  content: "";
+  position: absolute;
+  margin: 2px 0 0;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(to right, red, blue);
+  transition: width 0.3s ease;
+}
+
+.grid-element > .grid-text > h1:hover::after {
+  width: 100%;
+}
+
 .grid-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   background-color: rgb(35, 35, 35);
   color: white;
   position: absolute;
   bottom: 0;
-  height: 80px;
+  height: 100px;
   text-align: center;
   & h1 {
-    margin: 10px 0 10px;
+    margin: 5px;
+    position: relative;
+    width: max-content;
   }
   & p {
-    margin: 10px 0 10px;
+    margin: 5px;
   }
 }
 
