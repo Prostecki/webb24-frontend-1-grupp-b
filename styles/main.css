@@ -146,3 +146,11 @@ main {
 .huge-font {
   font-size: 30px;
 }
+
+.grid-container {
+  display: grid;
+}
+
+.grid-img {
+  width: 300px;
+}
