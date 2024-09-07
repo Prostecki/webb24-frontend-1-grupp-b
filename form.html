@@ -27,38 +27,25 @@
         <h2> Contact us</h2>
         <p> Please provide us with your details and a brief description of your project or inquiry. We’ll review your message and reach out to you promptly.</p>
         <br>
-
-        <form action="/submit-form" method="post"></form>
+    <form> 
         <fieldset class="form-container">
-            <div class="name">
                  <label for="name">Name:</label>
                  <input type="text" id="name" required>
-            </div>
             <br> 
-            <br> 
-            <div class="email">
                 <label for="email">Email:</label>
                 <input type="email" id="email" required>
-            </div>
+            
             <br> 
-            <br> 
-            <div class="number">
                 <label for="phone">Phone Number:</label>
-                <input type="number" id="phone">
-            </div>
+                <input type="number" id="phone" required>
+           
             <br>
-            <br>
-            <div class="message">
                 <label for="message">Message:</label>
-                <textarea id="message" rows="5" required></textarea> 
-            </div>
-            <br>
+                <textarea id="message" rows="10" cols="50" required></textarea> 
             <br> 
             <button type="submit">Send</button>
         </fieldset>
-
-
-
+    </form>
     </section>
 </body>
 </html>
