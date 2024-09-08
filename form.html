@@ -26,20 +26,23 @@
 
     <form> 
         <fieldset class="form-container">
-                <label for="name">Name:</label>
-                <input type="text" required>
+                <label for="name" class="visually-hidden">Name</label>
+                <input type="text" placeholder="Name" class="contact-inputs">
             <br> 
-                <label for="email">Email:</label>
-                <input type="email" required>
+                <label for="email" class="visually-hidden">Email</label>
+                <input type="email" placeholder="Email *" class="contact-inputs" required>
             <br> 
-                <label for="phone">Phone Number:</label>
-                <input type="number" required>
+                <label for="phone" class="visually-hidden">Phone Number</label>
+                <input type="number" placeholder="Phone Number *" class="contact-inputs" required>
             <br>
-                <label for="message">Inquiry:</label>
-                <textarea id="message" rows="10" cols="50" ></textarea> 
+                <label for="message" class="visually-hidden">Message</label>
+                <textarea id="message" placeholder="How can we help bring your idea to life?" rows="10" cols="50" ></textarea> 
             <br> 
                 <button type="submit">Send</button>
         </fieldset>
     </form>
+
+    <hr class="line">
+
 </body>
 </html>

@@ -15,12 +15,13 @@
     display: flex;
     flex-direction: column;
     background-color: rgb(255, 255, 255); 
-    border-radius: 15px;
+    border-radius: 40px;
     max-width: 500px;
     margin: auto;
-    padding: 10px;
-    box-shadow: 0px 1px 30px 0px rgba(251, 249, 249, 0.59);
+    padding: 40px;
+    box-shadow: 0px 5px 18px 0px rgba(251, 249, 249, 0.59);
     align-items: center;
+    margin-bottom: 100px;
     
 }
 
@@ -29,14 +30,33 @@
  input {
     width: 300px;
     height: 25px;
-    padding: 5px;
-    border-radius: 7px;
-    border-color: rgb(71, 16, 181)
+    padding: 7px;
+    border: solid 1.5px;
+    border-radius: 10px;
+    border-color: rgb(71, 16, 181);
+    box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.176);
+
   }
 
-  label {
-    text-align: center;
-  }
+
+
+
+ #message {
+    resize: none;
+    border: solid 1.5px;
+    border-radius: 10px;
+    border-color: rgb(71, 16, 181);
+    padding: 10px;
+    box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.176);
+
+} 
+
+
+.visually-hidden {
+    display: none;
+}
+
+
 
 
 input[type=number]::-webkit-inner-spin-button, 
@@ -49,11 +69,30 @@ input[type=number]::-webkit-outer-spin-button {
     /* Detta är för att ta bort dragdown dekorationen i nummerfältet. Hittade via W3. */ 
 }
 
-#message {
-    resize: none;
-    border-radius: 7px;
-    border-color: rgb(71, 16, 181)
 
+
+
+.contact-inputs:focus {
+
+  background-color: rgba(216, 216, 216, 0.4);
+  border: solid 1.9px rgb(71, 16, 181);
+  outline: none;
+
+}
+
+#message:focus {
+  background-color: rgba(216, 216, 216, 0.4);
+  border: solid 1.9px rgb(71, 16, 181);
+  outline: none;
+
+}
+
+.contact-inputs:hover {
+  background-color: rgba(216, 216, 216, 0.179);
+}
+
+#message:hover {
+  background-color: rgba(216, 216, 216, 0.179);
 }
 
 button {
@@ -83,16 +122,16 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     
 
   }
 
   .title {
-    font-size: 3rem;
+    font-size: 50px;
     letter-spacing: 1.5px;
     color: white;
-    font-weight: 400;
+    font-weight: bold;
     text-align: center;
     margin-top: 60px;
     
@@ -100,11 +139,23 @@ button {
 
   .subheading {
     color: white;
-    margin-top: 10px;
+    font-size: 18px;
+    margin-top: 20px;
     text-align: center;
-    max-width: 500px;
-    font-weight: 1;
-    letter-spacing: 1.5px;
+    max-width: 700px;
+    letter-spacing: 0.8px;
     
     
   }
+
+
+  .line {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255), rgba(0, 0, 0, 0));
+    margin-top: 120px;
+    max-width: 1000px;
+    margin: auto;
+  
+  }
+
