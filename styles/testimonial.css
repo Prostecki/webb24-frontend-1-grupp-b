@@ -35,3 +35,8 @@ align-items: center;
     font-weight: bold;
     margin-left: 5px;
 }
+
+#person {
+    height: 150px;
+    width: 150px;
+}
