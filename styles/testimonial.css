@@ -40,3 +40,31 @@ align-items: center;
     height: 150px;
     width: 150px;
 }
+
+.testimonials {
+    padding: 100px;
+    text-align: center;
+    color: white;
+    
+}
+
+
+.line2 {
+
+    width: 200px;
+    height: 5px;
+    background-color: rgb(184, 53, 255);
+    margin: 20px auto;
+    border: none;
+
+}
+
+.row {
+    
+
+
+}
+
+.col {
+    
+}
