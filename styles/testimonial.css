@@ -37,9 +37,9 @@ align-items: center;
 }
 
 #person {
-    height: 100px;
-    width: 100px;
-    border-radius: 100px;
+    height: 120px;
+    width: 120px;
+    border-radius: 100%;
 }
 
 .subject {
@@ -50,12 +50,16 @@ align-items: center;
 }
 
 .inside-text {
-    color: white
+    color: white;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 5px;
 }
 
 .name {
-    color: rgb(45, 45, 45);
+    color: rgba(255, 255, 255, 0.767);
     font-weight: bold;
+    margin: 10px;
 }
 
 
@@ -74,20 +78,23 @@ align-items: center;
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1000px;
-    margin: auto;    
+    margin: auto; 
+    margin-bottom: 100px;   
+    margin-top: 20px;
 }
 
 .box {
     flex: 0 0 48%; 
-    border: 1px solid #000;
     padding: 10px;
     text-align: center;
     margin: 10px;
     box-sizing: border-box;
-    background-color: rgb(198, 198, 198);
-    box-shadow: 0 10px 15px 0 rgba(255, 255, 255, 0.59);
+    background-color: rgb(46, 44, 49);
+    box-shadow: 0 1px 15px 0 rgba(46, 44, 49);
 }
 
 .stars .checked {
     color: rgb(236, 160, 18);
+    margin-bottom: 20px;
 }
+
