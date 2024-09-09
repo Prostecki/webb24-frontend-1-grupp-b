@@ -273,8 +273,9 @@ hr {
 }
 
 .visicraft-first-word {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
+  color: aquamarine;
 }
 
 footer {
