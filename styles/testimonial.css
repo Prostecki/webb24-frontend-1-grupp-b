@@ -16,3 +16,22 @@ align-items: center;
 }
 
 
+
+.checked {
+    color: rgb(144, 0, 255);
+    margin: 5px;
+}
+
+.rating {
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.rating .text {
+    color: white;
+    font-weight: bold;
+    margin-left: 5px;
+}
