@@ -19,16 +19,17 @@ main {
 }
 
 .header {
-  height: 60px;
+  height: 80px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: whitesmoke;
+  background-color: rgb(46, 44, 49);
 }
 
 .header-logo {
-  width: 100px;
-  padding: 5px;
+  width: 200px;
+  border-radius: 15px;
+  margin: 0;
 }
 
 .links-container {
@@ -38,13 +39,13 @@ main {
   padding: 10px;
   display: flex;
   justify-content: space-between;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .links-container > a {
   position: relative;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .links-container > a::after {
@@ -214,6 +215,7 @@ hr {
 .grid-outer-container {
   display: flex;
   justify-content: center;
+  height: 1000px;
 }
 
 .grid-container {
@@ -221,7 +223,6 @@ hr {
   grid-template-rows: 400px 300px;
   grid-template-columns: 300px 300px 300px;
   gap: 50px 20px;
-  width: 100%;
 }
 
 .background-container {
@@ -241,5 +242,18 @@ hr {
 
 .about-container {
   width: 100%;
+  height: 600px;
+  color: white;
+  background: rgb(46, 44, 49);
+  display: grid;
+}
+
+.tech-stack img {
+  width: 50px;
+  background-color: white;
+}
+
+footer {
   height: 200px;
+  background-color: wheat;
 }
