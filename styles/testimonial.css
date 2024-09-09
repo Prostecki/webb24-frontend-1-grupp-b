@@ -37,8 +37,9 @@ align-items: center;
 }
 
 #person {
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
 }
 
 .subject {
@@ -46,17 +47,15 @@ align-items: center;
     color: rgb(255, 255, 255);
     text-align: center;
 
-    
 }
 
 .inside-text {
-    color: black;
-    text-shadow: 0 16px 30px 0;
+    color: white
 }
 
 .name {
-    color: black;
-    font-weight: 500;
+    color: rgb(45, 45, 45);
+    font-weight: bold;
 }
 
 
@@ -79,13 +78,16 @@ align-items: center;
 }
 
 .box {
-    flex: 0 0 48%; /* Each box takes up 48% width for a 2-column layout */
+    flex: 0 0 48%; 
     border: 1px solid #000;
     padding: 10px;
     text-align: center;
-    margin: 5px;
+    margin: 10px;
     box-sizing: border-box;
-    background-color: white;
-    b
+    background-color: rgb(198, 198, 198);
+    box-shadow: 0 10px 15px 0 rgba(255, 255, 255, 0.59);
 }
 
+.stars .checked {
+    color: rgb(236, 160, 18);
+}
