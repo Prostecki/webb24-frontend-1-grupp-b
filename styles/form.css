@@ -96,7 +96,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 button {
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(137, 43, 226, 0.841);
     width: 300px;
     height: 50px;
     padding: 15px;
