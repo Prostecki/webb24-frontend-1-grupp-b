@@ -240,17 +240,41 @@ hr {
   transition: 0.5s;
 }
 
-.about-container {
+.about-grid-container {
   width: 100%;
-  height: 600px;
   color: white;
   background: rgb(46, 44, 49);
   display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tre columns nere */
+  grid-template-rows: auto 1fr; /* Rubriken uppe, resten av content i 3 colomns */
+  grid-gap: 50px;
+  padding: 50px;
+}
+
+.about-grid-container article {
+  grid-column: 1 / -1; /* Sträka article till hela columns */
+  font-size: 55px;
+  font-weight: bolder;
+  text-align: center; /* Centrera text */
+}
+
+.story-section,
+.vision,
+.tech-stack {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.5px;
+  font-weight: 500;
 }
 
 .tech-stack img {
   width: 50px;
-  background-color: white;
+  margin-right: 10px;
+}
+
+.visicraft-first-word {
+  font-size: 30px;
+  font-weight: bold;
 }
 
 footer {
