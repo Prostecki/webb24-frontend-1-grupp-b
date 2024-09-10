@@ -1,100 +1,90 @@
 .description {
-    color: white;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    max-width: 500px;
-
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  max-width: 500px;
 }
 
 .headline-container {
-
-display: flex;
-flex-direction: column;
-align-items: center;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-
-
 .checked {
-    color: rgb(144, 0, 255);
-    margin: 5px;
+  color: rgb(144, 0, 255);
+  margin: 5px;
 }
 
 .rating {
-    font-size: 2em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 40px;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
 .rating .text {
-    color: white;
-    font-weight: bold;
-    margin-left: 5px;
+  color: white;
+  font-weight: bold;
+  margin-left: 5px;
 }
 
 #person {
-    height: 120px;
-    width: 120px;
-    border-radius: 100%;
+  height: 120px;
+  width: 120px;
+  border-radius: 100%;
 }
 
 .subject {
-    padding: 20px;
-    color: rgb(255, 255, 255);
-    text-align: center;
-
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  text-align: center;
 }
 
 .inside-text {
-    color: white;
-    font-weight: 200;
-    letter-spacing: 1px;
-    padding: 5px;
+  color: white;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 5px;
 }
 
 .name {
-    color: rgba(255, 255, 255, 0.767);
-    font-weight: bold;
-    margin: 10px;
+  color: rgba(255, 255, 255, 0.767);
+  font-weight: bold;
+  margin: 10px;
 }
 
-
 .line2 {
-
-    width: 200px;
-    height: 5px;
-    background-color: rgb(184, 53, 255);
-    margin: 20px auto;
-    border: none;
-
+  width: 200px;
+  height: 5px;
+  background-color: rgb(184, 53, 255);
+  margin: 20px auto;
+  border: none;
 }
 
 .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 1000px;
-    margin: auto; 
-    margin-bottom: 100px;   
-    margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom: 100px;
+  margin-top: 20px;
 }
 
 .box {
-    flex: 0 0 48%; 
-    padding: 10px;
-    text-align: center;
-    margin: 10px;
-    box-sizing: border-box;
-    background-color: rgb(46, 44, 49);
-    box-shadow: 0 1px 15px 0 rgba(46, 44, 49);
+  flex: 0 0 48%;
+  padding: 10px;
+  text-align: center;
+  margin: 10px;
+  box-sizing: border-box;
+  background-color: rgb(46, 44, 49);
+  box-shadow: 0 1px 15px 0 rgba(46, 44, 49);
 }
 
 .stars .checked {
-    color: rgb(236, 160, 18);
-    margin-bottom: 20px;
+  color: rgb(236, 160, 18);
+  margin-bottom: 20px;
 }
-
