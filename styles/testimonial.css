@@ -31,7 +31,7 @@
   margin-left: 5px;
 }
 
-#person {
+.person {
   height: 120px;
   width: 120px;
   border-radius: 100%;
