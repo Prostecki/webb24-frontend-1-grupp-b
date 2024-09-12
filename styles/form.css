@@ -14,14 +14,13 @@
 .form-container {
     display: flex;
     flex-direction: column;
-    background-color: rgb(255, 255, 255); 
-    border-radius: 40px;
-    max-width: 500px;
+    background-color: rgba(82, 0, 164, 0.571); 
+    max-width: 650px;
     margin: auto;
     padding: 40px;
-    box-shadow: 0px 5px 18px 0px rgba(251, 249, 249, 0.59);
+    box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.579);
     align-items: center;
-    margin-bottom: 100px;
+    border: none;
     
 }
 
@@ -29,12 +28,13 @@
 
  .contact-inputs {
     width: 300px;
-    height: 25px;
-    padding: 7px;
-    border: solid 1.5px;
+    height: 36px;
+    padding: 10px;
+    border: none;
     border-radius: 10px;
     border-color: rgb(71, 16, 181);
-    box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.176);
+    background-color: rgb(222, 222, 222);
+    
 
   }
 
@@ -43,11 +43,11 @@
 
  #message {
     resize: none;
-    border: solid 1.5px;
+    border: none;
     border-radius: 10px;
     border-color: rgb(71, 16, 181);
     padding: 10px;
-    box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.176);
+    background-color: rgb(222, 222, 222);
 
 } 
 
@@ -74,25 +74,28 @@ input[type=number]::-webkit-outer-spin-button {
 
 .contact-inputs:focus {
 
-  background-color: rgba(216, 216, 216, 0.4);
-  border: solid 1.9px rgb(71, 16, 181);
+  background-color: rgb(255, 255, 255);
+  border: solid 1px black;
+  height: 42px;
   outline: none;
 
 }
 
 #message:focus {
-  background-color: rgba(216, 216, 216, 0.4);
-  border: solid 1.9px rgb(71, 16, 181);
+  background-color: rgb(255, 255, 255);
   outline: none;
+  border: solid 2px black;
+  
 
 }
 
 .contact-inputs:hover {
-  background-color: rgba(216, 216, 216, 0.179);
+
+  background-color: rgb(255, 255, 255);
 }
 
 #message:hover {
-  background-color: rgba(216, 216, 216, 0.179);
+  background-color: rgb(255, 255, 255);
 }
 
 button {
@@ -110,7 +113,7 @@ button {
   }
   
   button:hover {
-    background-color: rgb(66, 16, 166);
+    background-color: rgb(16, 3, 42);
     transition: 0.6s;
     
   } 
@@ -122,7 +125,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     
 
   }
@@ -149,7 +152,7 @@ button {
   }
 
 
-  .formline {
+.formline {
     border: 0;
     height: 2px;
     background-image: linear-gradient(to right, rgba(252, 248, 248, 0), rgb(255, 255, 255), rgba(130, 0, 139, 0));
@@ -157,4 +160,5 @@ button {
     margin: 300px auto;
   
   }
+
 
