@@ -40,7 +40,7 @@ main {
   padding: 10px;
   display: flex;
   justify-content: space-between;
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 
 .links-container > a {
@@ -85,10 +85,9 @@ main {
 .headline {
   text-align: center;
   margin: 0 0 25px;
-  font-size: 50px;
+  font-size: 3rem;
   font-weight: bold;
   color: white;
-  scroll-behavior: smooth;
 }
 
 .text {
@@ -283,4 +282,25 @@ hr {
 footer {
   height: 200px;
   background-color: wheat;
+}
+
+@media (max-width: 768px) {
+  .content-text-container {
+    max-width: 500px;
+  }
+  .headline {
+    font-size: 1.5rem;
+  }
+
+  header img {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .content-text-container {
+    max-width: 400px;
+    min-height: 50vh;
+    margin: 0;
+  }
 }
