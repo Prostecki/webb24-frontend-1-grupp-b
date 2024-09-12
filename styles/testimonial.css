@@ -88,3 +88,23 @@
   color: rgb(236, 160, 18);
   margin-bottom: 20px;
 }
+
+.title {
+  font-size: 50px;
+  letter-spacing: 1.5px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 60px;
+
+}
+
+.line {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(116, 11, 116, 0), rgb(117, 54, 126), rgba(130, 0, 139, 0));
+  margin-top: 120px;
+  max-width: 1000px;
+  margin: auto;
+
+}
