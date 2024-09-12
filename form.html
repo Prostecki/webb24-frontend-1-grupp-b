@@ -1,49 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Get in Touch</title>
-    <link rel="stylesheet" href="styles/form.css"/>
-    <link rel="stylesheet" href="styles/main.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="styles/form.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
     <header class="header">
-        <img src="img/visicraft.png" alt="logo of company" class="header-logo" />
-        <nav class="links-container">
-          <a href="">Home</a>
-          <a href="">Customers</a>
-          <a href="">About</a>
-          <a href="">Get in Touch</a>
-        </nav>
-      </header>
-      
-      <section class="contact-container">
-         <article class="title"> Get in Touch </article> 
-         <p class="subheading"> We're excited to learn more about your project and discuss how we can help bring your vision to life. Please complete the form below, and we’ll reach out to you shortly.</p>
-      </section>
+      <img src="img/visicraft.png" alt="logo of company" class="header-logo" />
+      <nav class="links-container">
+        <a href="index.html">Home</a>
+        <a href="testimonials.html">Customers</a>
+        <a href="">About</a>
+        <a href="form.html">Get in Touch</a>
+      </nav>
+    </header>
 
-    <form> 
-        <fieldset class="form-container">
-                <label for="name" class="visually-hidden">Name</label>
-                <input type="text" placeholder="Name" class="contact-inputs">
-            <br> 
-                <label for="email" class="visually-hidden">Email</label>
-                <input type="email" placeholder="Email *" class="contact-inputs" required>
-            <br> 
-                <label for="phone" class="visually-hidden">Phone Number</label>
-                <input type="number" placeholder="Phone Number *" class="contact-inputs" required>
-            <br>
-                <label for="message" class="visually-hidden">Message</label>
-                <textarea id="message" placeholder="How can we help bring your idea to life?" rows="10" cols="50" ></textarea> 
-            <br> 
-                <button type="submit">Send</button>
-        </fieldset>
+    <section class="contact-container">
+      <article class="title">Get in Touch</article>
+      <p class="subheading">
+        We're excited to learn more about your project and discuss how we can
+        help bring your vision to life. Please complete the form below, and
+        we’ll reach out to you shortly.
+      </p>
+    </section>
+
+    <form>
+      <fieldset class="form-container">
+        <label for="name" class="visually-hidden">Name</label>
+        <input type="text" placeholder="Name" class="contact-inputs" />
+        <br />
+        <label for="email" class="visually-hidden">Email</label>
+        <input
+          type="email"
+          placeholder="Email *"
+          class="contact-inputs"
+          required
+        />
+        <br />
+        <label for="phone" class="visually-hidden">Phone Number</label>
+        <input
+          type="number"
+          placeholder="Phone Number *"
+          class="contact-inputs"
+          required
+        />
+        <br />
+        <label for="message" class="visually-hidden">Message</label>
+        <textarea
+          id="message"
+          placeholder="How can we help bring your idea to life?"
+          rows="10"
+          cols="50"
+        ></textarea>
+        <br />
+        <button type="submit">Send</button>
+      </fieldset>
     </form>
 
-<hr class="line">
-    
-
-</body>
+    <hr class="line" />
+  </body>
 </html>
