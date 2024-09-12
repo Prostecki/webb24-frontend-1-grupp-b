@@ -150,7 +150,7 @@ main {
   font-size: 30px;
 }
 
-hr {
+.mainline {
   border: 0;
   height: 2px;
   width: 1000px;
