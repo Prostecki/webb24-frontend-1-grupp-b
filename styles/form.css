@@ -149,7 +149,7 @@ button {
   }
 
 
-  .line {
+  .formline {
     border: 0;
     height: 1px;
     background-image: linear-gradient(to right, rgba(116, 11, 116, 0), rgb(117, 54, 126), rgba(130, 0, 139, 0));
