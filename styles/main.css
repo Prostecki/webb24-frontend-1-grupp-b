@@ -1,9 +1,22 @@
-.header {
-  height: 80px;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(22 20 26);
+}
+
+main {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
-  background-color: rgb(46, 44, 49);
 }
 
 .header {
@@ -50,4 +63,224 @@
 
 .links-container > a:hover::after {
   width: 100%;
+}
+
+.content-section {
+  width: 1000px;
+  margin: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-text-container {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 50px;
+}
+
+.headline {
+  text-align: center;
+  margin: 0 0 25px;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+.text {
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  color: white;
+}
+
+.getintouch-button {
+  width: 200px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 0.5px solid black;
+  box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.176);
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.getintouch-button:hover {
+  background-color: rgb(71, 16, 181);
+  transition: 0.6s;
+  color: white;
+}
+
+.laptop {
+  width: 1000px;
+  border-radius: 10px;
+  box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.176);
+}
+
+.img-container {
+  position: relative;
+}
+
+.img-headline {
+  font-size: 50px;
+  position: absolute;
+  display: inline-block;
+  width: max-content;
+  text-align: center;
+  color: white;
+  top: 50px;
+  letter-spacing: 1.5px;
+  left: 200px;
+}
+
+.img-headline::after {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, red, blue);
+}
+
+.huge-font {
+  font-size: 30px;
+}
+
+hr {
+  border: 0;
+  height: 2px;
+  width: 1000px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(255, 255, 255),
+    rgba(0, 0, 0, 0)
+  );
+  margin: 0 0 75px;
+}
+
+.grid-element {
+  position: relative;
+  cursor: pointer;
+  height: 400px;
+  transition: 0.5s;
+}
+
+.grid-element:hover .grid-img {
+  filter: blur(2px);
+  transition: 0.5s;
+}
+
+.grid-element > .grid-text > h1::after {
+  content: "";
+  position: absolute;
+  margin: 2px 0 0;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(to right, red, blue);
+  transition: width 0.3s ease;
+}
+
+.grid-element > .grid-text > h1:hover::after {
+  width: 100%;
+}
+
+.grid-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(35, 35, 35);
+  color: white;
+  position: absolute;
+  bottom: 0;
+  height: 100px;
+  text-align: center;
+  & h1 {
+    margin: 5px;
+    position: relative;
+    width: max-content;
+  }
+  & p {
+    margin: 5px;
+  }
+}
+
+.grid-outer-container {
+  display: flex;
+  justify-content: center;
+  height: 1000px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: 400px 300px;
+  grid-template-columns: 300px 300px 300px;
+  gap: 50px 20px;
+}
+
+.background-container {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.176);
+}
+
+.grid-img {
+  transform: scale(1.6);
+  width: 400px;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.about-grid-container {
+  width: 100%;
+  color: white;
+  background: rgb(46, 44, 49);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tre columns nere */
+  grid-template-rows: auto 1fr; /* Rubriken uppe, resten av content i 3 colomns */
+  grid-gap: 50px;
+  padding: 50px;
+}
+
+.about-grid-container article {
+  grid-column: 1 / -1; /* Sträka article till hela columns */
+  font-size: 55px;
+  font-weight: bolder;
+  text-align: center; /* Centrera text */
+}
+
+.story-section,
+.vision,
+.tech-stack {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+.tech-stack img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.visicraft-first-word {
+  font-size: 25px;
+  font-weight: bold;
+  color: aquamarine;
+}
+
+footer {
+  height: 200px;
+  background-color: wheat;
 }
