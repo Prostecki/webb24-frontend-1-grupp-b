@@ -66,7 +66,7 @@ main {
 }
 
 .content-section {
-  width: 1000px;
+  max-width: 1000px;
   margin: 75px;
   display: flex;
   flex-direction: column;
@@ -305,8 +305,11 @@ main {
 }
 
 footer {
+  margin: 20px 0 0;
+  color: white;
   height: 200px;
-  background-color: wheat;
+  border-top: 0.5px solid white;
+  background-color: rgb(30, 29, 32);
 }
 
 @media (max-width: 768px) {
@@ -327,6 +330,7 @@ footer {
 
   .content-section {
     margin: 0;
+    max-width: max-content;
   }
 
   .content-text-container {
