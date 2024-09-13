@@ -285,6 +285,18 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .header {
+    background-color: rgb(30, 29, 32);
+    height: 100px;
+  }
+  .links-container {
+    display: none;
+  }
+
+  .header-logo {
+    text-align: center;
+  }
+
   .content-text-container {
     max-width: 500px;
   }
@@ -292,8 +304,8 @@ footer {
     font-size: 1.5rem;
   }
 
-  header img {
-    display: none;
+  header nav > a {
+    font-size: 1rem;
   }
 }
 
@@ -302,5 +314,14 @@ footer {
     max-width: 400px;
     min-height: 50vh;
     margin: 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .headline {
+    font-size: 1.5rem;
+  }
+  .text {
+    display: none;
   }
 }
