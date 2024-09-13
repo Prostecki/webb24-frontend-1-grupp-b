@@ -290,6 +290,7 @@ footer {
   }
   .headline {
     font-size: 1.5rem;
+    color: yellow;
   }
 
   header nav > a {
