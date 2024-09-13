@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
 html {
   scroll-behavior: smooth;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -104,8 +106,9 @@ main {
   color: white;
 }
 
-.getintouch-button > a {
+.getintouch-button-desktop > a {
   display: inline-block;
+  /* display: none; */
   width: 200px;
   padding: 15px;
   border-radius: 10px;
@@ -120,7 +123,7 @@ main {
   text-align: center;
 }
 
-.getintouch-button:hover {
+.getintouch-button-desktop:hover > a {
   background-color: rgb(71, 16, 181);
   transition: 0.6s;
   color: white;
@@ -249,6 +252,7 @@ main {
   grid-template-rows: 400px 300px;
   grid-template-columns: 300px 300px 300px;
   gap: 50px 20px;
+  min-height: 100vh;
 }
 
 .background-container {
@@ -270,18 +274,19 @@ main {
   width: 100%;
   color: white;
   background: rgb(46, 44, 49);
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Tre columns nere */
-  grid-template-rows: auto 1fr; /* Rubriken uppe, resten av content i 3 colomns */
+  /* display: grid; */
+  /* grid-template-columns: repeat(3, 1fr); Tre columns nere */
+  /* grid-template-rows: auto 1fr; Rubriken uppe, resten av content i 3 colomns */
   grid-gap: 50px;
-  padding: 50px;
+  margin: 50px;
 }
 
 .about-grid-container article {
   grid-column: 1 / -1; /* Sträka article till hela columns */
-  font-size: 55px;
+  font-size: 3.5rem;
   font-weight: bolder;
   text-align: center; /* Centrera text */
+  margin: 20px 0 0;
 }
 
 .story-section,
@@ -312,13 +317,25 @@ footer {
   background-color: rgb(30, 29, 32);
 }
 
+.footer-links > a > img {
+  width: 30px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background-color: white;
+}
+
 @media (max-width: 768px) {
   main {
     max-width: 768px;
   }
   .header {
+    /* position: fixed; */
     background-color: rgb(30, 29, 32);
-    height: 100px;
+    height: 80px;
   }
   .links-container {
     display: none;
