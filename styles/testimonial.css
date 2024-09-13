@@ -75,20 +75,16 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 1000px;
-  margin: auto;
-  margin-bottom: 100px;
-  margin-top: 20px;
 }
 
 .box {
-  flex: 0 0 48%;
   padding: 10px;
   text-align: center;
   margin: 10px;
   box-sizing: border-box;
   background-color: rgb(46, 44, 49);
   box-shadow: 0 1px 15px 0 rgba(46, 44, 49);
+  max-width: 400px;
 }
 
 .stars .checked {
@@ -115,5 +111,10 @@
   margin-top: 120px;
   max-width: 1000px;
   margin: auto;
+
+}
+
+@media only screen and (max-width: 600px) {
+
 
 }
