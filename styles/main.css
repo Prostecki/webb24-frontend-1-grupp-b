@@ -249,10 +249,9 @@ main {
 
 .grid-container {
   display: grid;
-  grid-template-rows: 400px 300px;
-  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 50px 20px;
-  min-height: 100vh;
 }
 
 .background-container {
@@ -314,7 +313,7 @@ footer {
   color: white;
   height: 200px;
   border-top: 0.5px solid white;
-  background-color: rgb(30, 29, 32);
+  background-color: rgb(28, 39, 49);
 }
 
 .footer-links > a > img {
