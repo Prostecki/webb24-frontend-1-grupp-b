@@ -90,6 +90,13 @@ main {
   color: white;
 }
 
+.visi-text {
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  color: white;
+}
+
 .text {
   text-align: center;
   font-size: 18px;
@@ -97,7 +104,8 @@ main {
   color: white;
 }
 
-.getintouch-button {
+.getintouch-button > a {
+  display: inline-block;
   width: 200px;
   padding: 15px;
   border-radius: 10px;
@@ -106,6 +114,10 @@ main {
   font-size: 18px;
   cursor: pointer;
   transition: 0.5s;
+  background-color: rgb(87, 33, 195);
+  text-decoration: none;
+  color: white;
+  text-align: center;
 }
 
 .getintouch-button:hover {
@@ -148,6 +160,20 @@ main {
 
 .huge-font {
   font-size: 30px;
+}
+
+.mainline-under-button {
+  display: none;
+  border: 0;
+  height: 2px;
+  width: 1000px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(255, 255, 255),
+    rgba(0, 0, 0, 0)
+  );
+  margin: 0 0 75px;
 }
 
 .mainline {
@@ -216,7 +242,6 @@ main {
 .grid-outer-container {
   display: flex;
   justify-content: center;
-  height: 1000px;
 }
 
 .grid-container {
@@ -285,6 +310,9 @@ footer {
 }
 
 @media (max-width: 768px) {
+  main {
+    max-width: 768px;
+  }
   .header {
     background-color: rgb(30, 29, 32);
     height: 100px;
@@ -297,22 +325,66 @@ footer {
     text-align: center;
   }
 
+  .content-section {
+    margin: 0;
+  }
+
   .content-text-container {
     max-width: 500px;
+    margin: 50px 0px;
   }
   .headline {
     font-size: 1.5rem;
   }
 
+  .visi-text {
+    display: none;
+  }
+
+  .laptop {
+    display: none;
+  }
+
+  .text {
+    font-size: 1.5rem;
+  }
   header nav > a {
     font-size: 1rem;
+  }
+  .img-headline {
+    display: none;
+  }
+  .mainline {
+    display: none;
+  }
+  .mainline-under-button {
+    max-width: 350px;
+    display: block;
+    margin: 50px 0 0;
+  }
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .grid-outer-container {
+    padding: 10px;
+  }
+  .grid-element {
+    max-width: 300px;
+  }
+  .about-grid-container {
+    display: none;
   }
 }
 
 @media (max-width: 450px) {
+  main {
+    max-width: 450px;
+  }
+
   .content-text-container {
     max-width: 400px;
-    min-height: 50vh;
+    min-height: 30vh;
     margin: 0;
   }
 }
@@ -321,7 +393,7 @@ footer {
   .headline {
     font-size: 1.5rem;
   }
-  .text {
+  .visitext {
     display: none;
   }
 }
