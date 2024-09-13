@@ -15,14 +15,15 @@
 
 
 
-/* input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    margin: 0; 
 
-    /* Detta är för att ta bort dragdown dekorationen i nummerfältet. Hittade via W3. */ 
+
+
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
 
 
 
@@ -36,14 +37,28 @@ input[type=number]::-webkit-outer-spin-button {
     
   }
 
+
+
   .subheading {
     color: white;
     font-size: 18px;
     margin-top: 20px;
     text-align: center;
-    max-width: 700px;
     letter-spacing: 0.8px;
-    
-    
-  }
+    max-width: 50%;
+  }    
 
+
+
+
+
+  
+
+/* input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+
+    /* Detta är för att ta bort dragdown dekorationen i nummerfältet. Hittade via W3. */ 
