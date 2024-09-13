@@ -37,7 +37,7 @@ main {
 
 .links-container {
   gap: 20px;
-  width: 600px;
+  min-width: 300px;
   height: max-content;
   padding: 10px;
   display: flex;
