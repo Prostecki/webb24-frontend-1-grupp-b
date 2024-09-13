@@ -14,14 +14,13 @@
 .form-container {
     display: flex;
     flex-direction: column;
-    background-color: rgb(255, 255, 255); 
-    border-radius: 40px;
-    max-width: 500px;
+    background-color: rgb(22 20 26);
+    max-width: 650px;
     margin: auto;
     padding: 40px;
-    box-shadow: 0px 5px 18px 0px rgba(251, 249, 249, 0.59);
+    box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.514);
     align-items: center;
-    margin-bottom: 100px;
+    border: none;
     
 }
 
@@ -29,12 +28,13 @@
 
  .contact-inputs {
     width: 300px;
-    height: 25px;
-    padding: 7px;
-    border: solid 1.5px;
+    height: 36px;
+    padding: 10px;
+    border: none;
     border-radius: 10px;
     border-color: rgb(71, 16, 181);
-    box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.176);
+    background-color: rgb(222, 222, 222);
+    
 
   }
 
@@ -43,11 +43,11 @@
 
  #message {
     resize: none;
-    border: solid 1.5px;
+    border: none;
     border-radius: 10px;
     border-color: rgb(71, 16, 181);
     padding: 10px;
-    box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.176);
+    background-color: rgb(222, 222, 222);
 
 } 
 
@@ -74,35 +74,38 @@ input[type=number]::-webkit-outer-spin-button {
 
 .contact-inputs:focus {
 
-  background-color: rgba(216, 216, 216, 0.4);
-  border: solid 1.9px rgb(71, 16, 181);
+  background-color: rgb(255, 255, 255);
+  border: solid 1px black;
+  height: 42px;
   outline: none;
 
 }
 
 #message:focus {
-  background-color: rgba(216, 216, 216, 0.4);
-  border: solid 1.9px rgb(71, 16, 181);
+  background-color: rgb(255, 255, 255);
   outline: none;
+  border: solid 2px black;
+  
 
 }
 
 .contact-inputs:hover {
-  background-color: rgba(216, 216, 216, 0.179);
+
+  background-color: rgb(255, 255, 255);
 }
 
 #message:hover {
-  background-color: rgba(216, 216, 216, 0.179);
+  background-color: rgb(255, 255, 255);
 }
 
 button {
-    background-color: rgba(137, 43, 226, 0.841);
+    background-color: rgb(59, 10, 149);
     width: 300px;
     height: 50px;
     padding: 15px;
     border-radius: 10px;
     border: 0.5px solid black;
-    box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.176);
+    box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.176); 
     font-size: 18px;
     cursor: pointer;
     transition: 0.5s;
@@ -110,7 +113,7 @@ button {
   }
   
   button:hover {
-    background-color: rgb(71, 16, 181);
+    background-color: rgb(61, 4, 175);
     transition: 0.6s;
     
   } 
@@ -122,7 +125,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     
 
   }
@@ -149,13 +152,13 @@ button {
   }
 
 
-  .formline {
+.formline {
     border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(116, 11, 116, 0), rgb(117, 54, 126), rgba(130, 0, 139, 0));
-    margin-top: 120px;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(252, 248, 248, 0), rgb(255, 255, 255), rgba(130, 0, 139, 0));
     max-width: 1000px;
-    margin: auto;
+    margin: 300px auto;
   
   }
+
 

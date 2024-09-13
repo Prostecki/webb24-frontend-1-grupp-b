@@ -3,7 +3,9 @@
   text-align: center;
   margin-top: 20px;
   margin-bottom: 40px;
-  max-width: 500px;
+  max-width: 600px;
+  font-size: 18px;
+  letter-spacing: 0.8px;
 }
 
 .headline-container {
@@ -29,6 +31,7 @@
   color: white;
   font-weight: bold;
   margin-left: 5px;
+  font-size: 2rem;
 }
 
 .person {
@@ -44,25 +47,29 @@
 }
 
 .inside-text {
-  color: white;
-  font-weight: 200;
-  letter-spacing: 1px;
-  padding: 5px;
+  color: rgb(255, 255, 255);
+  font-weight: 500; 
+  padding: 25px;
+  
 }
 
 .name {
   color: rgba(255, 255, 255, 0.767);
-  font-weight: bold;
-  margin: 10px;
+  font-weight: 800;
+  margin: 5px;
 }
 
-.line2 {
-  width: 200px;
-  height: 5px;
-  background-color: rgb(184, 53, 255);
-  margin: 20px auto;
-  border: none;
+.line2 { 
+
+  border: 0;
+  height: 7px;
+  max-width: 210px;
+  margin: auto;
+  margin-bottom: 20px;
+  background-color: rgb(124, 6, 192);
+
 }
+
 
 .boxes {
   display: flex;
@@ -86,11 +93,13 @@
 
 .stars .checked {
   color: rgb(236, 160, 18);
-  margin-bottom: 20px;
+  margin: 8px;
+  font-size: larger;
+  
 }
 
 .title {
-  font-size: 50px;
+  font-size: 60px;
   letter-spacing: 1.5px;
   color: white;
   font-weight: bold;
@@ -102,7 +111,7 @@
 .line {
   border: 0;
   height: 1px;
-  background-image: linear-gradient(to right, rgba(116, 11, 116, 0), rgb(117, 54, 126), rgba(130, 0, 139, 0));
+  background-image: linear-gradient(to right, rgba(116, 11, 116, 0), rgb(255, 255, 255), rgba(130, 0, 139, 0));
   margin-top: 120px;
   max-width: 1000px;
   margin: auto;
