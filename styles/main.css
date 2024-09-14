@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
 html {
   scroll-behavior: smooth;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -13,11 +15,11 @@ body {
   background-color: rgb(22 20 26);
 }
 
-main {
+/* main {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+} */
 
 .header {
   height: 80px;
@@ -35,7 +37,7 @@ main {
 
 .links-container {
   gap: 20px;
-  width: 600px;
+  min-width: 300px;
   height: max-content;
   padding: 10px;
   display: flex;
@@ -66,8 +68,8 @@ main {
 }
 
 .content-section {
-  max-width: 1000px;
-  margin: 75px;
+  width: 100%;
+  margin: 50px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -86,6 +88,7 @@ main {
   text-align: center;
   margin: 0 0 25px;
   font-size: 3rem;
+  width: 65%;
   font-weight: bold;
   color: white;
 }
@@ -93,6 +96,7 @@ main {
 .visi-text {
   text-align: center;
   font-size: 18px;
+  width: 65%;
   letter-spacing: 0.8px;
   color: white;
 }
@@ -104,8 +108,14 @@ main {
   color: white;
 }
 
-.getintouch-button > a {
+.section-img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.getintouch-button-desktop > a {
   display: inline-block;
+  /* display: none; */
   width: 200px;
   padding: 15px;
   border-radius: 10px;
@@ -120,7 +130,7 @@ main {
   text-align: center;
 }
 
-.getintouch-button:hover {
+.getintouch-button-desktop:hover > a {
   background-color: rgb(71, 16, 181);
   transition: 0.6s;
   color: white;
@@ -179,14 +189,14 @@ main {
 .mainline {
   border: 0;
   height: 2px;
-  width: 1000px;
+  max-width: 100%;
   background-image: linear-gradient(
     to right,
     rgba(0, 0, 0, 0),
     rgba(255, 255, 255),
     rgba(0, 0, 0, 0)
   );
-  margin: 0 0 75px;
+  margin: 0 0 75px auto;
 }
 
 .grid-element {
@@ -246,8 +256,8 @@ main {
 
 .grid-container {
   display: grid;
-  grid-template-rows: 400px 300px;
-  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 50px 20px;
 }
 
@@ -270,18 +280,15 @@ main {
   width: 100%;
   color: white;
   background: rgb(46, 44, 49);
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Tre columns nere */
-  grid-template-rows: auto 1fr; /* Rubriken uppe, resten av content i 3 colomns */
-  grid-gap: 50px;
-  padding: 50px;
+  padding: 0 15px;
 }
 
 .about-grid-container article {
   grid-column: 1 / -1; /* Sträka article till hela columns */
-  font-size: 55px;
+  font-size: 3.5rem;
   font-weight: bolder;
   text-align: center; /* Centrera text */
+  margin: 20px 0 0;
 }
 
 .story-section,
@@ -309,7 +316,18 @@ footer {
   color: white;
   height: 200px;
   border-top: 0.5px solid white;
-  background-color: rgb(30, 29, 32);
+  background-color: rgb(28, 39, 49);
+}
+
+.footer-links > a > img {
+  width: 30px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background-color: white;
 }
 
 @media (max-width: 768px) {
@@ -317,8 +335,9 @@ footer {
     max-width: 768px;
   }
   .header {
+    /* position: fixed; */
     background-color: rgb(30, 29, 32);
-    height: 100px;
+    height: 80px;
   }
   .links-container {
     display: none;
