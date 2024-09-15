@@ -24,17 +24,24 @@
 
     <section class="contact-container">
       <article class="title">Get in Touch</article>
+      <hr class="contactline">
       <p class="subheading">
         We're excited to learn more about your project and discuss how we can
         help bring your vision to life. Please complete the form below, and
         we’ll reach out to you shortly.
       </p>
     </section>
-
-    <form>
-
-      
-    </form>
+    <div class="formcontainer">
+      <form class="insideform"> 
+        <input type="text" name="name" placeholder="Your Name" class="contact-input">
+        <input type="email" name="email" placeholder="Your Email *" class="contact-input" required>
+        <input type="number" name="phone" placeholder="Phone Number *" class="contact-input" required>
+        <textarea name="message" placeholder="Tell us about your ideas.." class="contact-input"></textarea>
+        <button type="submit">Submit Request</button>
+      </form>
+    </div>
     
-  </body>
+  </body> 
 </html>
+
+
