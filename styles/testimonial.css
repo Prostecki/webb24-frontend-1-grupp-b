@@ -75,6 +75,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  
 }
 
 .box {
@@ -156,10 +157,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: -70px;
 
 }
 
 .entities img {
-  height: 400px;
+  height: 300px;
 }
+
+
