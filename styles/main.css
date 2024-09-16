@@ -282,6 +282,7 @@ body {
   color: #e0e0e0; /* Light text for contrast */
   padding: 50px;
   & article {
+    grid-column: 1 / -1; /* Första sifran - elementen börjar med första kolumnen, och -1 - avslutar med sista (-1 indikerar att det är sista kolumnen  */
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
@@ -291,7 +292,7 @@ body {
 
 .about-grid-container {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
 }
 
@@ -315,7 +316,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  /* gap: 30px; */
   margin: 20px 0;
 }
 
@@ -384,7 +385,7 @@ footer {
 .footer-links {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 25px;
   margin: 0 0 40px 0;
 }
 
