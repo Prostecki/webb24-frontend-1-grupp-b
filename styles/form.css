@@ -61,7 +61,7 @@
   justify-content: center;
   border-radius: 20px;
   max-width: 800px;
-  margin: 100px auto;
+  margin: 50px auto;
   box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.468);
   
 }
@@ -143,3 +143,130 @@ input[type=number]::-webkit-outer-spin-button {
 
     /* Detta är för att ta bort dragdown dekorationen i nummerfältet. Hittade via W3. */  
 
+
+
+
+@media (max-width: 876px) {
+.subheading {
+  display: none;
+}
+
+.formcontainer {
+  border: none;
+  border-radius: 0px;
+  box-shadow: none;
+  margin-top: -20px;
+}
+
+.insideform textarea {
+  width: 550px;
+
+}
+
+@media (max-width: 645px) {
+  .insideform textarea {
+    width: 500px;
+  }
+
+}
+
+@media (max-width: 519px) {
+  .insideform textarea {
+    width: 410px;
+  }
+
+  .contact-input {
+    width: 300px;
+  }
+
+
+  .title {
+    font-size: 45px;
+  }
+
+  .contactline {
+    width: 310px;
+  }
+}
+
+@media (max-width: 435px) {
+ 
+  .contact-input {
+    width: 280px;
+  }
+
+  .insideform textarea {
+    width: 350px;
+    height: 200px;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .contactline {
+    width: 280px;
+  }
+
+  .insideform button {
+    width: 180px;
+    height: 50px;
+    font-size: 15px;
+    padding: 10px;
+    
+  }
+
+}
+
+@media (max-width: 366px) {
+  .title {
+    font-size: 32px;
+  }
+
+  .contactline {
+    width: 225px;
+  }
+
+  .contact-input {
+    width: 240px;
+    font-size: 11px;
+
+  }
+
+  .insideform textarea {
+    width: 300px;
+    height: 170px;
+    font-size: 12px;
+  }
+
+  .insideform button {
+    width: 130px;
+    padding: 10px;
+    height: 40px;
+    font-size: 12px;
+  }
+
+
+}
+
+@media (max-width: 304px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .contactline {
+    width: 200px;
+  }
+
+  .contact-input {
+    width: 220px;
+    height: 35px;
+
+  }
+
+  .insideform textarea {
+    width: 270px;
+    height: 150px;
+  }
+
+}
