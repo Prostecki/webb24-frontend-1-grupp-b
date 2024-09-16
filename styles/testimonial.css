@@ -48,8 +48,9 @@
 
 .inside-text {
   color: rgb(255, 255, 255);
-  font-weight: 500; 
   padding: 25px;
+  letter-spacing: 0.8px;
+  font-weight: 400;
   
 }
 
@@ -86,6 +87,8 @@
   background-color: rgb(46, 44, 49);
   box-shadow: 0 1px 15px 0 rgba(46, 44, 49);
   max-width: 400px;
+  border: 1px solid rgb(144, 0, 255);
+  border-radius: 20px;
 }
 
 .stars .checked {
@@ -131,7 +134,7 @@
 .clickherebutton {
   display: flex;
   justify-content: center;
-  margin: 70px auto;
+  margin: 40px auto;
   width: 200px;
   padding: 15px;
   border-radius: 10px;
@@ -165,3 +168,111 @@
 }
 
 
+@media (max-width: 837px) {
+.box { 
+  max-width: 80%;
+  border-radius: 50px;
+  margin: 20px;
+}
+
+.getting-started h2 {
+  font-size: 45px;
+}
+
+
+}
+
+@media (max-width: 700px) {
+
+  .title {
+    font-size: 50px;
+  }
+
+  .getting-started h2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 574px) {
+  .title {
+    font-size: 38px;
+    margin-bottom: 30px;
+  }
+
+  .description {
+    display: none;
+  }
+
+  .box {
+    max-width: 90%;
+    
+  }
+
+
+
+}
+
+
+@media (max-width: 468px) {
+
+  .getting-started h2 {
+    font-size: 34px;
+    margin-top: 100px;
+  }
+
+  .title {
+    font-size: 34px;
+  }
+
+  .rating .text {
+    font-size: smaller;
+  }
+
+  .rating .checked {
+    font-size: smaller;
+  }
+}
+
+@media (max-width: 381px) {
+  .rating .text {
+    font-size: 20px;
+  }
+
+  .getting-started h2 {
+    font-size: 30px;
+  }
+
+
+  .inside-text {
+    padding: 10px;
+
+  }
+
+
+  .title {
+    font-size: 30px;
+  }
+
+}
+
+
+
+@media (max-width: 330px) {
+
+
+  .rating .text {
+    font-size: 18px;
+  }
+  .rating .checked {
+    font-size: 20px;
+  }
+
+  .title {
+    font-size: 25px;
+  }
+
+  .inside-text {
+    padding: 5px;
+    font-weight: bold;
+  }
+}
