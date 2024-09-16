@@ -24,45 +24,43 @@
 
     <section class="contact-container">
       <article class="title">Get in Touch</article>
+      <hr class="contactline">
       <p class="subheading">
         We're excited to learn more about your project and discuss how we can
         help bring your vision to life. Please complete the form below, and
         we’ll reach out to you shortly.
       </p>
     </section>
+    <div class="formcontainer">
+      <form class="insideform"> 
+        <input type="text" name="name" placeholder="Your Name" class="contact-input">
+        <input type="email" name="email" placeholder="Your Email *" class="contact-input" required>
+        <input type="number" name="phone" placeholder="Phone Number *" class="contact-input" required>
+        <textarea name="message" placeholder="Tell us about your ideas.." class="contact-input"></textarea>
+        <button type="submit">Submit Request</button>
+      </form>
+    </div>
 
-    <form>
-      <fieldset class="form-container">
-        <label for="name" class="visually-hidden">Name</label>
-        <input type="text" placeholder="Name" class="contact-inputs" />
-        <br />
-        <label for="email" class="visually-hidden">Email</label>
-        <input
-          type="email"
-          placeholder="Email *"
-          class="contact-inputs"
-          required
-        />
-        <br />
-        <label for="phone" class="visually-hidden">Phone Number</label>
-        <input
-          type="number"
-          placeholder="Phone Number *"
-          class="contact-inputs"
-          required
-        />
-        <br />
-        <label for="message" class="visually-hidden">Message</label>
-        <textarea
-          id="message"
-          placeholder="How can we help bring your idea to life?"
-          rows="10"
-          cols="50"
-        ></textarea>
-        <br />
-        <button type="submit">Send</button>
-      </fieldset>
-    </form>
-    <!-- <hr class="formline" /> -->
-  </body>
+    <footer>
+      <div class="project-name">
+        <h3>VisiCraft 2024</h3>
+      </div>
+      <div class="footer-links">
+        <a href="">
+          <img src="img/instagram.svg" alt="">
+        </a>
+        <a href="">
+          <img src="img/linkedin.svg" alt="">
+        </a>
+        <a href="">
+          <img src="img/twitter.svg" alt="">
+        </a>
+        <a href="">
+          <img src="img/twitterx.svg" alt="">
+        </a>
+      </div>
+    </footer>
+  </body> 
 </html>
+
+
