@@ -284,7 +284,7 @@ body {
 }
 
 .about-grid-container article {
-  grid-column: 1 / -1; /* Sträka article till hela columns */
+  /* grid-column: 1 / -1; Sträka article till hela columns */
   font-size: 3.5rem;
   font-weight: bolder;
   text-align: center; /* Centrera text */
@@ -327,7 +327,6 @@ footer {
   display: flex;
   justify-content: center;
   gap: 30px;
-  background-color: white;
 }
 
 @media (max-width: 768px) {
