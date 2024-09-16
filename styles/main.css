@@ -113,7 +113,7 @@ body {
   justify-content: center;
 }
 
-.contact-us-button-desktop > a {
+.getintouch-button-desktop > a {
   display: inline-block;
   /* display: none; */
   width: 200px;
@@ -130,7 +130,7 @@ body {
   text-align: center;
 }
 
-.contact-us-button-desktop:hover > a {
+.getintouch-button-desktop:hover > a {
   background-color: rgb(71, 16, 181);
   transition: 0.6s;
   color: white;
@@ -204,6 +204,7 @@ body {
   cursor: pointer;
   height: 400px;
   transition: 0.5s;
+  border-radius: 10px;
 }
 
 .grid-element:hover .grid-img {
@@ -265,50 +266,65 @@ body {
   display: flex;
   align-items: center;
   overflow: hidden;
-  height: 400px;
+  min-height: 300px;
   background-color: rgba(0, 0, 0, 0.176);
 }
 
 .grid-img {
   transform: scale(1.6);
-  width: 400px;
+  max-width: 300px;
   z-index: -1;
   transition: 0.5s;
 }
 
-.about-grid-container {
-  width: 100%;
-  color: white;
-  background: rgb(46, 44, 49);
-  padding: 0 15px;
+#historia-section {
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text for contrast */
+  padding: 50px;
+  & article {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 0 25px;
+  }
 }
 
-.about-grid-container article {
-  /* grid-column: 1 / -1; Sträka article till hela columns */
-  font-size: 3.5rem;
-  font-weight: bolder;
-  text-align: center; /* Centrera text */
-  margin: 20px 0 0;
+.about-grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
 }
 
 .story-section,
 .vision,
 .tech-stack {
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.5px;
-  font-weight: 500;
+  background-color: #1e1e1e; /* Slightly lighter dark for containers */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  & h1 {
+    color: #ff6f61;
+  }
+  & p {
+    line-height: 1.6;
+    font-size: 16px;
+  }
 }
 
 .tech-stack img {
   width: 50px;
-  margin-right: 10px;
+  margin: 10px;
+  filter: brightness(0.8); /* Darkens icons slightly */
+}
+
+img:hover {
+  filter: brightness(1.2); /* Brightens on hover */
+  transition: 0.3s;
 }
 
 .visicraft-first-word {
   font-size: 25px;
   font-weight: bold;
-  color: aquamarine;
 }
 
 footer {
@@ -317,11 +333,10 @@ footer {
 
 .footer-container {
   width: 100%;
-  margin: 20px 0 0;
   position: relative;
   color: white;
   height: 500px;
-  border-top: 0.5px solid white;
+  border-top: 0.5px solid grey;
   background-color: black;
   display: flex;
   align-items: center;
@@ -378,9 +393,7 @@ footer {
   text-decoration: none;
   color: white;
   text-align: center;
-  transition: 0.6s;
 }
-
 .contact-us-button:hover > a {
   background-color: rgb(71, 16, 181);
   transition: 0.6s;
@@ -429,7 +442,7 @@ ul {
 
   .content-section {
     margin: 0;
-    max-width: max-content;
+    max-width: 100%;
   }
 
   .content-text-container {
@@ -451,52 +464,82 @@ ul {
   .text {
     font-size: 1.5rem;
   }
+
   header nav > a {
     font-size: 1rem;
   }
+
   .img-headline {
     display: none;
   }
+
   .mainline {
     display: none;
   }
+
   .mainline-under-button {
     max-width: 350px;
     display: block;
     margin: 50px 0 0;
   }
+
   .grid-container {
     display: flex;
     flex-direction: column;
   }
+
   .grid-outer-container {
     padding: 10px;
   }
+
   .grid-element {
     max-width: 300px;
   }
+
   .about-grid-container {
+    grid-template-columns: 1fr; /* Two-column layout for larger screens */
+  }
+
+  footer {
+    max-width: 100%;
+  }
+  .footer-container {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-container::after {
+    bottom: 3rem;
+  }
+
+  .footer-navigation {
     display: none;
   }
-}
 
-@media (max-width: 450px) {
-  main {
-    max-width: 450px;
+  .project-name {
+    max-width: max-content;
+    text-align: center;
   }
 
-  .content-text-container {
-    max-width: 400px;
-    min-height: 30vh;
-    margin: 0;
-  }
-}
+  @media (max-width: 450px) {
+    main {
+      max-width: 450px;
+    }
 
-@media (max-width: 360px) {
-  .headline {
-    font-size: 1.5rem;
+    .content-text-container {
+      max-width: 400px;
+      min-height: 30vh;
+      margin: 0;
+    }
   }
-  .visitext {
-    display: none;
+
+  @media (max-width: 360px) {
+    .headline {
+      font-size: 1.5rem;
+    }
+    .visitext {
+      display: none;
+    }
   }
 }
