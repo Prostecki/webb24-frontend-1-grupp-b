@@ -265,7 +265,7 @@ body {
 }
 
 .grid-img {
-  transform: scale(1.6);
+  transform: scale(2);
   max-width: 300px;
   z-index: -1;
   transition: 0.5s;
