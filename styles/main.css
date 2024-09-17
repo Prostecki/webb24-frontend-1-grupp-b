@@ -297,12 +297,30 @@ body {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  transition: 0.5s;
   & h1 {
     color: #ff6f61;
+    transition: 0.5s;
   }
   & p {
     line-height: 1.6;
     font-size: 16px;
+    transition: 0.5s;
+  }
+}
+
+.story-section:hover,
+.vision:hover,
+.tech-stack:hover {
+  background-color: #3b3b3b;
+  transition: 0.5s;
+  & h1 {
+    color: transparent;
+    transition: 0.5s;
+  }
+  & p {
+    transform: scale(1.05);
+    transition: 0.5s;
   }
 }
 
