@@ -13,10 +13,6 @@ html {
 
 body {
   background-color: rgb(22 20 26);
-  
-  
-
-  
 }
 
 .header {
@@ -456,11 +452,16 @@ ul {
   width: 60%;
 }
 
-/* @media (max-width: 1000px) {
-  .footer-container::after {
-    bottom: 1rem;
-  }
-} */
+.copy-rights > span > a {
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+}
+
+.copy-rights > span > a:hover {
+  color: red;
+  transition: 0.5s;
+}
 
 @media (max-width: 1000px) {
   .footer-container::after {
