@@ -318,13 +318,13 @@ body {
   background-color: #3b3b3b;
   transition: 0.5s;
   & h1 {
-    color: transparent;
+    color: rgba(19, 19, 19, 0.77);
     transition: 0.5s;
   }
   & p {
-    transform: scale(1.05);
+    transform: scale(1.02);
     transition: 0.5s;
-    padding: 5px;
+    /* padding: 5px; */
   }
 }
 
@@ -332,7 +332,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* gap: 30px; */
   margin: 20px 0;
 }
 
