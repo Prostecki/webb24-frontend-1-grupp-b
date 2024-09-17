@@ -469,7 +469,6 @@ ul {
     max-width: 768px;
   }
   .header {
-    /* position: fixed; */
     background-color: rgb(30, 29, 32);
     height: 80px;
   }
