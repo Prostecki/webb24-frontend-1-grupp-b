@@ -51,7 +51,6 @@
   padding: 25px;
   letter-spacing: 0.8px;
   font-weight: 400;
-  
 }
 
 .name {
@@ -60,23 +59,19 @@
   margin: 5px;
 }
 
-.line2 { 
-
+.line2 {
   border: 0;
   height: 7px;
   max-width: 210px;
   margin: auto;
   margin-bottom: 20px;
   background-color: rgb(124, 6, 192);
-
 }
-
 
 .boxes {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  
 }
 
 .box {
@@ -95,7 +90,6 @@
   color: rgb(236, 160, 18);
   margin: 8px;
   font-size: larger;
-  
 }
 
 .title {
@@ -105,30 +99,29 @@
   font-weight: bold;
   text-align: center;
   margin-top: 60px;
-
 }
 
 .line {
   border: 0;
   height: 1px;
-  background-image: linear-gradient(to right, rgba(116, 11, 116, 0), rgb(255, 255, 255), rgba(130, 0, 139, 0));
+  background-image: linear-gradient(
+    to right,
+    rgba(116, 11, 116, 0),
+    rgb(255, 255, 255),
+    rgba(130, 0, 139, 0)
+  );
   margin-top: 120px;
   max-width: 1000px;
   margin: auto;
-
 }
 
-
-
 .getting-started h2 {
-
   font-size: 50px;
   letter-spacing: 1.5px;
   color: white;
   font-weight: bold;
   text-align: center;
   margin-top: 60px;
-
 }
 
 .clickherebutton {
@@ -146,8 +139,6 @@
   background-color: rgb(87, 33, 195);
   text-decoration: none;
   color: white;
-
-
 }
 
 .clickherebutton:hover {
@@ -160,30 +151,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .entities img {
   height: 300px;
 }
 
-
 @media (max-width: 837px) {
-.box { 
-  max-width: 80%;
-  border-radius: 50px;
-  margin: 20px;
-}
+  .box {
+    max-width: 80%;
+    border-radius: 50px;
+    margin: 20px;
+  }
 
-.getting-started h2 {
-  font-size: 45px;
-}
-
-
+  .getting-started h2 {
+    font-size: 45px;
+  }
 }
 
 @media (max-width: 700px) {
-
   .title {
     font-size: 50px;
   }
@@ -205,16 +191,10 @@
 
   .box {
     max-width: 90%;
-    
   }
-
-
-
 }
 
-
 @media (max-width: 468px) {
-
   .getting-started h2 {
     font-size: 34px;
     margin-top: 100px;
@@ -242,24 +222,16 @@
     font-size: 30px;
   }
 
-
   .inside-text {
     padding: 10px;
-
   }
-
 
   .title {
     font-size: 30px;
   }
-
 }
 
-
-
 @media (max-width: 330px) {
-
-
   .rating .text {
     font-size: 18px;
   }
