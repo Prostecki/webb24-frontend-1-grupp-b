@@ -86,6 +86,21 @@
   border-radius: 20px;
 }
 
+
+.box:hover {
+    background-color: rgb(22 20 26);
+    transition: 0.5s; 
+
+  & .inside-text {
+    transform: scale(1.07);
+    transition: 0.5s;
+
+  }
+
+}
+
+
+
 .stars .checked {
   color: rgb(236, 160, 18);
   margin: 8px;
