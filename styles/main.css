@@ -32,7 +32,7 @@ body {
 .links-container {
   gap: 20px;
   min-width: 300px;
-  height: max-content;
+  /* height: max-content; */
   padding: 10px;
   display: flex;
   justify-content: space-between;
@@ -153,7 +153,7 @@ body {
 }
 
 .img-headline::after {
-  content: " ";
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -447,10 +447,10 @@ ul {
   }
 }
 
-.hr-footer {
+/* .hr-footer {
   height: 2px;
   width: 60%;
-}
+} */
 
 .copy-rights > span > a {
   text-decoration: none;
