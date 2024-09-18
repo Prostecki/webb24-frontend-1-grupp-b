@@ -71,7 +71,7 @@ body {
 
 .insideform textarea {
   height: 200px;
-  width: 600px;
+  width: 500px;
   padding: 18px 0px 0px 20px;
   border-radius: 20px;
   resize: none;
@@ -129,7 +129,7 @@ input[type="number"]::-webkit-outer-spin-button {
   }
 
   .insideform textarea {
-    width: 550px;
+    width: 500px;
   }
 }
 
