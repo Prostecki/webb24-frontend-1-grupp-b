@@ -7,13 +7,13 @@
     border-radius: 20px 20px 100px 100px;
     position: fixed;
     bottom: 0;
-    padding: 19px;
+    padding: 1rem;
     left: 0;
     right: 0;
     margin: auto;
     margin-bottom: 50px;
     box-shadow: 0 0 10px grey;
-    z-index: 9999;
+    z-index: 1;
     transition: 0.6s;
     
 
@@ -44,7 +44,7 @@
 }
 
 
-.bottomul { 
+.bottomul {  
     display: flex;
     justify-content: space-evenly;
     align-items: center;
