@@ -25,3 +25,5 @@ Group project for the submission of Frontend Block 1 assignment, following the c
 ## How to Use
 1. Clone the repo:
    git clone https://github.com/Prostecki/webb24-frontend-1-grupp-b.git
+   
+<b>Nackademin, 2024</b>
