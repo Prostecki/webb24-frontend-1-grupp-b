@@ -1,5 +1,5 @@
 <h1>VisiCraft 2024</h1>
-Group project for the submission of Frontend Block 1 assignment, following the criteria below:
+Group project for an assignment of Frontend Block 1, following the criteria below:
 <ul>
   <li>
     A minimum of two HTML pages
